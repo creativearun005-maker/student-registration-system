@@ -46,3 +46,17 @@ CREATE TABLE students (
     email VARCHAR(100) UNIQUE NOT NULL,
     enrollment_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+
+### 3. Application Environment
+
+spring.datasource.url=jdbc:mysql://localhost:3306/student_db
+spring.datasource.username=YOUR_MYSQL_USERNAME
+spring.datasource.password=YOUR_MYSQL_PASSWORD
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+
+mvn clean install
+mvn spring-boot:run
+
+
